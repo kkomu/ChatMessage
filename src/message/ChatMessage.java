@@ -18,11 +18,20 @@ public class ChatMessage implements Serializable {
     private String userName;
     private String chatMessage;
     private String messageColor;
+    private String fontType;
     private boolean privateMessage;
     private String privateName;
     private boolean nameUpdate;
     private boolean userListUpdate;
+    
+     public String getFontType() {
+        return fontType;
+    }
 
+    public void setFontType(String fontType) {
+        this.fontType = fontType;
+    }
+    
     public boolean isUserListUpdate() {
         return userListUpdate;
     }
