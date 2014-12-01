@@ -18,8 +18,7 @@ public class ChatMessage implements Serializable {
     private String userName;
     private String chatMessage;
     private String messageColor;
-    private int fontSize;
-    private boolean isPrivate;
+    private boolean privateMessage;
     private String privateName;
     private boolean nameUpdate;
     private boolean userListUpdate;
@@ -64,20 +63,12 @@ public class ChatMessage implements Serializable {
         this.messageColor = messageColor;
     }
 
-    public int getFontSize() {
-        return fontSize;
+    public boolean isPrivateMessage() {
+        return privateMessage;
     }
 
-    public void setFontSize(int fontSize) {
-        this.fontSize = fontSize;
-    }
-
-    public boolean isIsPrivate() {
-        return isPrivate;
-    }
-
-    public void setIsPrivate(boolean isPrivate) {
-        this.isPrivate = isPrivate;
+    public void setPrivateMessage(boolean privateMessage) {
+        this.privateMessage = privateMessage;
     }
 
     public String getPrivateName() {
